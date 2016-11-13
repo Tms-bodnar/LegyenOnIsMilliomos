@@ -6,6 +6,7 @@
 package loimgui;
 
 import java.sql.SQLException;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.TreeSet;
@@ -33,6 +34,7 @@ public class Kerdezo extends Foablak{
        this.kerdes = kerdes;
     }
     public Kerdesek getKerdezo(int i){
+        Collections.shuffle(kerdesek);
         kerdes = kerdesek.elementAt(i);
         return kerdes;
     }
